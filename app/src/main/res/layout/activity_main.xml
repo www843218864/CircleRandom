@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center">
 
     <com.bwie.uu.circlerandom.CustomView
 
         android:layout_width="300dp"
         android:layout_height="300dp"
-       app:radius_out="200"
-       app:radius_in="80"
-       app:radius_out_color="#859"
-       app:text="1234"
-       app:textSize="30sp"
+        app:radius_in="80"
+        app:radius_out="200"
+        app:radius_out_color="#859"
+        app:text="1234"
+        app:textSize="30sp"
 
         />
 </LinearLayout>

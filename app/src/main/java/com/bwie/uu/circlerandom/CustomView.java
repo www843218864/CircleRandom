@@ -59,10 +59,9 @@ public class CustomView extends View {
             }
         }
         paint = new Paint();
-        paint.setTextSize(textSize);
         paint.setAntiAlias(true);
         rect = new Rect();
-        paint.getTextBounds(text, 0, text.length(), rect);
+
         this.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -94,6 +93,8 @@ public class CustomView extends View {
         paint.setColor(Color.WHITE);
         canvas.drawCircle(getMeasuredWidth() / 2, getMeasuredHeight() / 2, radius_in, paint);
         paint.setColor(Color.BLACK);
+        paint.setTextSize(textSize);
+        paint.getTextBounds(text, 0, text.length(), rect);
         canvas.drawText(text,getMeasuredWidth()/2-rect.width()/2,getMeasuredHeight()/2+rect.height()/2,paint);
     }
 }
